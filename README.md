@@ -3,35 +3,31 @@
 > - B、搭建restful接口的web服务器（spring boot）
 > - C、项目基于python 模块 flask 搭建 （有兴趣可以看看Django的使用）
 
-# 2、python包大全：http://note.youdao.com/noteshare?id=c0243b89787a80f7638a3bdb77a60fd2&sub=6B3CCC5B479F4D73B62332F8E518ABE8
-
-# 3、pipen命令：http://note.youdao.com/noteshare?id=a7d94996962877b7c920dc004de1e08f&sub=1593018522FC4EEDA52455A10CA0ED3E
-
-# 4、app.common包下面有一些公共类
+# 2、app.common包下面有一些公共类
 > -  BaseDao.py ：对DBUtils.PersistentDB 包进行了二次封装，简化了操作mysql的步骤，使用例子参照test_mysql_001.py
 > -  logger.py：日志打印，类似于java 的logback
 > -  RedisDao.py: 操作redis的类
 
-# 5、requestsA.py：列出了发送http请求的常用使用方式（类似于java里的OKHttpUtils）
+# 3、requestsA.py：列出了发送http请求的常用使用方式（类似于java里的OKHttpUtils）
 
-# 6、restful：目录提供了对外暴露的接口
+# 4、restful：目录提供了对外暴露的接口
  > - A、启动项目，访问接口：localhost:8000/test/t
 
-# 7、cron：目录下提供了定时器相关的使用方法，于spring boot的 @Scheduled(cron = "0 */10 * * * ? ") 功能一模一样
+# 5、cron：目录下提供了定时器相关的使用方法，于spring boot的 @Scheduled(cron = "0 */10 * * * ? ") 功能一模一样
 > - A、@Scheduled注解的实现方式，参照app.cron.__init__.py类
 
-# 8、微信机器人：app.wx.wx_test.py 简单的列出了python怎样去发送微信消息
+# 6、微信机器人：app.wx.wx_test.py 简单的列出了python怎样去发送微信消息
 
-# 9、settings: 目录提供了全局配置，如果数据库用户秘密。。。
+# 7、settings: 目录提供了全局配置，如果数据库用户秘密。。。
 
-# 10、.env：文件是控制项目的环境（本地：dev  测试：test  正式：product）
+# 8、.env：文件是控制项目的环境（本地：dev  测试：test  正式：product）
 > - A、修改.env文件内容：在jenkins发布时，使用命令sed -i 's/ENVSTATUS=dev/ENVSTATUS=${CENV}/g' .env 去修改
 
-# 11、Pipfile：是基于pipen创建的，是项目相关的一些第三方依赖，类似于nodejs里的包
+# 9、Pipfile：是基于pipen创建的，是项目相关的一些第三方依赖，类似于nodejs里的包
 
-# 12、Pipfile.lock：是根据Pipfile生成的sha256码（该文件不需要提交到git上）
+# 10、Pipfile.lock：是根据Pipfile生成的sha256码（该文件不需要提交到git上）
 
-# 13、项目运行 (在项目根目录执行下面命令)
+# 11、项目运行 (在项目根目录执行下面命令)
 > - A、创建虚拟环境：pipenv --python 3.6
 > - B、下载依赖包：pipenv install
 > - C、启动项目
@@ -41,7 +37,7 @@
         2）命令行运行
             nohup pipenv run python manager.py server >> ../run.log &
 
-# 14、pipenv使用
+# 12、pipenv使用
 ```
 注意：下面所有的pipenv操作都是在当前虚拟环境下执行的
 
@@ -247,7 +243,7 @@ pipenv install cffi
 
 ```
 
-# 15、pipenv包大全
+# 13、pipenv包大全
 ```
 python库大全：https://github.com/jobbole/awesome-python-cn.git
 伯乐在线：http://www.jobbole.com/
