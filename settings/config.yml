@@ -1,0 +1,23 @@
+dev:
+  mysql:
+    dbHost: 192.168.2.210
+    dbPort: 3306
+    dbDatabase: phb_data
+    dbUsername: xdnphb
+    dbPassword: xdnphb_2015
+
+test:
+  mysql:
+    dbHost: 192.168.2.210
+    dbPort: 3306
+    dbDatabase: phb_data
+    dbUsername: xdnphb
+    dbPassword: xdnphb_2015
+
+product:
+  mysql:
+    dbHost: 192.168.2.210
+    dbPort: 3306
+    dbDatabase: phb_data
+    dbUsername: xdnphb
+    dbPassword: xdnphb_2015

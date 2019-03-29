@@ -1,0 +1,38 @@
+[[source]]
+url = "https://mirrors.aliyun.com/pypi/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+attrs = "*"
+arrow = "*"
+dbutils = "*"
+redis = "*"
+logbook = "*"
+gevent = "*"
+grequests = "*"
+"pytesser3" = "*"
+pillow = "*"
+requests-html = "*"
+progressbar = "*"
+"urllib3" = "*"
+myqr = "*"
+flask = "*"
+flask-wtf = "*"
+pymysql = "*"
+requests = "*"
+flask-script = "*"
+flask-bootstrap = "*"
+pyyaml = "*"
+chandler-debugplugin = "*"
+flask-session = "*"
+flask-apscheduler = "*"
+"configparser2" = "*"
+pipfile = "*"
+ujson = "*"
+wxpy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
